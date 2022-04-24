@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevTeam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vue.css" />
+  <script src="https://unpkg.com/vue@next" defer></script>
+  <script src="vue.js" defer></script>
+</head>
+<body class="vue">
+  <header class="he">
+    <h1>DevTeam</h1>
+  </header>
+  <p class="ceotim">We specialize in custom web development, mobile apps, big data, and augmented reality solutions.</p>
+  <section id="app">
+      <friend-contact v-for="d in data" v-bind:friend="d"></friend-contact>
+  </section>
+</body>
+</html>
